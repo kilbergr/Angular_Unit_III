@@ -14,15 +14,15 @@
 <h2>Currency Converter</h2>
 	<input type="text" ng-model="amount">(USD)
 	
-	<select ng-model="convertTo">
+	<select ng-model="conversion">
 		<option value="bitcoin">Bitcoin</option>
 		<option value="dogecoin">Dogecoin</option>
 		<option value="litecoin">Litecoin</option>
 	</select>
-	<input type="submit" value="Convert">
+	<input type="submit" value="Convert" ng-click="showWhich(conversion)">
+	<div ng-show="show=='bitcoin'">{{(amount*coinData.bitcoin.ask).toFixed(2)}} (Bitcoin)</div>
+	<div ng-show="show=='dogecoin'">{{(amount*coinData.dogecoin.ask).toFixed(2)}} (Dogecoin)</div>
+	<div ng-show="show=='litecoin'">{{(amount*coinData.litecoin.ask).toFixed(2)}} (Litecoin)</div>
 
-	{{coinData.bitcoin.ask}}
-	{{coinData.dogecoin.ask}}
-	{{coinData.litecoin.ask}}
 </body>
 </html>

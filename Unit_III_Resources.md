@@ -9,3 +9,9 @@ It's realtime!!!
 
 * What are Web Sockets?  
 WebSockets is an advanced technology that makes it possible to open an interactive communication session between the user's browser and a server.  
+
+* What is AngularFire?  
+
+* Can you use Firebase with an Angular app without AngularFire?  
+
+* What does it mean that AngularFire supports 3-way data binding?  
